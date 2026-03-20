@@ -1,0 +1,66 @@
+plugins:
+  - rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 3.2
+  NewCops: enable
+  SuggestExtensions: false
+  Exclude:
+    - "vendor/**/*"
+    - "pkg/**/*"
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+    - "*.gemspec"
+
+Metrics/ModuleLength:
+  Exclude:
+    - "spec/support/**/*"
+
+Metrics/MethodLength:
+  Max: 15
+  Exclude:
+    - "spec/support/**/*"
+
+Metrics/ParameterLists:
+  MaxOptionalParameters: 5
+  Max: 7
+  Exclude:
+    - "spec/support/**/*"
+
+Metrics/AbcSize:
+  Max: 20
+
+Metrics/ClassLength:
+  Max: 150
+
+Metrics/CyclomaticComplexity:
+  Max: 8
+
+Metrics/PerceivedComplexity:
+  Max: 9
+
+RSpec/DescribeClass:
+  Exclude:
+    - "spec/integration/**/*"
+    - "spec/adversarial/**/*"
+
+RSpec/MultipleExpectations:
+  Max: 5
+
+RSpec/ExampleLength:
+  Max: 15
+
+RSpec/ContextWording:
+  Prefixes:
+    - when
+    - with
+    - without
+    - for
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 10

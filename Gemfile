@@ -1,0 +1,13 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+gemspec
+
+gem 'rexml', '>= 3.2'
+
+group :development, :test do
+  gem 'rspec', '~> 3.13'
+  gem 'rubocop', '~> 1.68', require: false
+  gem 'rubocop-rspec', '~> 3.2', require: false
+end
