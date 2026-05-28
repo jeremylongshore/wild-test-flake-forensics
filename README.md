@@ -1,5 +1,7 @@
 # wild-test-flake-forensics
 
+> Part of the **[wild ecosystem](https://github.com/jeremylongshore/wild-rails-ai-ops)** — 10 Ruby gems for running AI agents inside Rails apps under capability control.
+
 Detect flaky tests from CI history, score root causes by confidence, and produce prioritized triage reports.
 
 ## What it does
