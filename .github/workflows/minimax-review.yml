@@ -27,14 +27,17 @@ name: 'MiniMax Code Review'
 # SHA-pinned per supply-chain policy: it adds per-reviewer sticky comments
 # (upstream's fixed marker makes two lanes clobber each other), reasoning-model
 # <think>-stripping for M3, and the opt-in PR-description context the
-# adversarial lane requires.
+# adversarial lane requires. Those three are not visible in this repo's diff;
+# they are verifiable in the fork at the pinned SHA, in commentMarkerFor and
+# stripThinking in src/index.js and the INCLUDE_PR_BODY input in action.yml.
 #
 # SAFE-FOR-FORKS design: runs on `pull_request` (NOT pull_request_target), so a
 # forked PR never receives the MINIMAX_API_KEY secret. The same-repo guard below
 # skips fork PRs cleanly instead of failing on an empty key. Neither lane checks
 # out or executes PR code; the action fetches the diff through the API.
 #
-# Activation (already done on this repo):
+# Activation (repository settings, outside this diff; both lanes posting on a
+# pull request is what confirms them):
 #   1. Repo secret   MINIMAX_API_KEY        = MiniMax API key            [SET]
 #   2. Repo variable ENABLE_MINIMAX_REVIEW  = true   (kill switch, both) [SET]
 #   3. Repo variable MINIMAX_MODEL          = MiniMax-M3                 [SET]
