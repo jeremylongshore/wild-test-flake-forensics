@@ -4,6 +4,8 @@
 
 Detect flaky tests from CI history, score root causes by confidence, and produce prioritized triage reports.
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U5S225PTME)
+
 ## What it does
 
 - Parses CI test output from RSpec JSON, JUnit XML, and minitest JSON formats
