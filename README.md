@@ -1,5 +1,11 @@
 # wild-test-flake-forensics
 
+<!-- intent-select-partner:start -->
+[![Intent Solutions: Claude Partner Network Select Services Partner](https://raw.githubusercontent.com/intent-solutions-io/.github/b82af5d3e7951d85e39ea9e65cc24ee8278722a7/assets/brand/claude-select-partner.svg)](https://intentsolutions.io/)
+
+Intent Solutions is a Claude Partner Network Select Services Partner.
+<!-- intent-select-partner:end -->
+
 > Part of the **[wild ecosystem](https://github.com/intent-solutions-io/wild-rails-ai-ops)** — 10 Ruby gems for running AI agents inside Rails apps under capability control.
 
 Detect flaky tests from CI history, score root causes by confidence, and produce prioritized triage reports.
